@@ -40,7 +40,7 @@ def my_mlp(w, X, sigma=np.tanh):
 # -----------------------------------------------
 def MSE_func(w, X, y): # give the appropriate name and arguments
     f = my_mlp(w, X)
-    MSE = np.mean((f - y)**2)
+    MSE = np.sum((y-f)**2)
     return MSE
 # -----------------------------------------------
  
